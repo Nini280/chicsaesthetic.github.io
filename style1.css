@@ -1,0 +1,175 @@
+/* General styling */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #fce4ec;
+    margin: 0;
+    padding: 0;
+    color: #5e035e;
+}
+
+header {
+    background-color: #c2185b;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+/* Container for product grid */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+}
+
+/* Styling for each product */
+.product {
+    background-color: #ffebee;
+    border-radius: 15px;
+    margin: 20px;
+    width: 22%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    position: relative;
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for product cards */
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product:hover img {
+    transform: scale(1.05);
+}
+
+.product h2 {
+    font-size: 1.4em;
+    margin: 10px 0;
+    color: #ad1457;
+}
+
+.product p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Button styling */
+.order-btn {
+    background-color: #e91e63;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.order-btn:hover {
+    background-color: #ff6090;
+}
+
+/* Styling for responsive design */
+@media (max-width: 1200px) {
+    .product {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .product {
+        width: 90%;
+    }
+}
+/* Footer Styling */
+footer {
+    background-color: #c2185b;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 1em;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.footer-middle, .footer-right {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-middle ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-middle ul li {
+    margin-bottom: 10px;
+}
+
+.footer-middle ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-middle ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-right .social-icons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.footer-right .social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.footer-right .social-icons a:hover {
+    color: #ff6090;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #ad1457;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9em;
+}
